@@ -1,0 +1,14 @@
+# Versions below are the ones this packaged code was TESTED with (Python 3.12.3, CPU).
+# faiss-cpu is used so the file installs anywhere. For a GPU run replace it with a GPU
+# build of FAISS (the original runs used a GPU FAISS on Colab) - see README.md.
+# To pin the exact environment you ran in, execute:  python src/freeze_env.py
+numpy==2.4.4
+pandas==3.0.2
+scikit-learn==1.8.0
+xgboost==3.4.1
+rapidfuzz==3.14.6
+faiss-cpu==1.15.1
+
+# Optional, GPU-only (used by the original run to speed up database cleaning;
+# the code falls back to pandas automatically when they are absent):
+# cudf-cu12
